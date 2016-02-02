@@ -2,19 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
 		<div class="page-wrapper">
-			<h1>Крем брюле и пломбир с малиновым джемом</h1>
-			<div class="main-sliders">
-				<a href="#slider1">
-					<div class="current"></div>
-				</a>
-				<a href="#slider2"></a>
-				<a href="#slider3"></a>
-			</div>
-			<a class="main-button btn-common" href="#item">Давайте оба!</a>	
 			<div class="wrapper">
 				<header>
 					<div class="header-logo">
@@ -48,110 +40,116 @@
 							<a href="#about">О компании</a>
 						</li>
 					</ul>
-					<ul class="header-userblock">
-						<li>
-								<div class="userblock-searchform">
-									<form action="#echo" method="get" name="search-form">
-										<input type="search" name="search" id="search" placeholder="Что ищем">
-									</form>		
-								</div>
-						</li>
-						<li>Вход
-								<div class="userblock-loginform">
-									<form action="#echo" method="get" name="login-form">
-										<input type="email" name="email" id="email" placeholder="Электронная почта">
-										<input type="password" name="password" id="password" placeholder="Пароль">
-										<button type="submit" class="loginform-btn btn-common">Войти</button>
-										<div class="loginform-links">
-											<a href="#forgot">Забыли пароль?</a>
-											<a href="#register">Новая регистрация</a>
-										</div>
-									</form>	
-								</div>
-						</li>
-						<li>Пусто
-								<div class="userblock-cart">
-									<table class="cart-table">
-										<tr>
-											<td><a class="cart-exiticon" href="#delete"></a></td>
-											<td></td>
-											<td>Пломбир с апельсиновым джемом</td>
-											<td>1,5 кг х 200 руб.</td>
-											<td>300 руб.</td>
-										</tr>
-										<tr>
-											<td><a class="cart-exiticon" href="#delete"></a></td>
-											<td></td>
-											<td>Клубничный пломбир с присыпкой из белого шоколада</td>
-											<td>1,5 кг х 300 руб.</td>
-											<td>450 руб.</td>
-										</tr>
-									</table>
-									<p class="cart-total">Итого:750 руб.</p>
-									<a class="cart-button btn-common" href="order-placement">Оформить заказ</a>
-								</div>
-						</li>
-					</ul>
+					<div class="header-userblock">
+						<div class="userblock-searchblock">
+							<div class="userblock-searchform">
+								<form action="#echo" method="get" name="search-form">
+									<input type="search" name="search" id="search" placeholder="Что ищем">
+								</form>		
+							</div>
+						</div>
+						<div class="userblock-loginblock"><a class="loginblock-href" href="#login">Вход</a>
+							<div class="userblock-loginform">
+								<form action="#echo" method="get" name="login-form">
+									<input type="email" name="email" id="email" placeholder="Электронная почта">
+									<input type="password" name="password" id="password" placeholder="Пароль">
+									<button type="submit" class="loginform-btn btn-common">Войти</button>
+									<div class="loginform-links">
+										<a href="#forgot">Забыли пароль?</a>
+										<a href="#register">Новая регистрация</a>
+									</div>
+								</form>	
+							</div>
+						</div>
+						<div class="userblock-cartblock"><a class="cartblock-href" href="#cart">Пусто</a>
+							<div class="userblock-cart">
+								<table class="cart-table">
+									<tr>
+										<td><a class="cart-exiticon" href="#delete"></a></td>
+										<td></td>
+										<td>Пломбир с апельсиновым джемом</td>
+										<td>1,5 кг х 200 руб.</td>
+										<td>300 руб.</td>
+									</tr>
+									<tr>
+										<td><a class="cart-exiticon" href="#delete"></a></td>
+										<td></td>
+										<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+										<td>1,5 кг х 300 руб.</td>
+										<td>450 руб.</td>
+									</tr>
+								</table>
+								<p class="cart-total">Итого:750 руб.</p>
+								<a class="cart-button btn-common" href="#order-placement">Оформить заказ</a>
+							</div>
+						</div>
+				  </div>
 					<div class="header-telephone">
 						<div class="hours">с 10 до 20, ежедневно</div>
 						<div class="number">8 812 450-45-45</div>
 					</div>
 				</header>
 				<main>
+					<div class="slider">
+						<div class="slide" id="slide1">
+							<div class="slide-title">Крем брюле и пломбир с малиновым джемом</div>
+							<a class="slide-button btn-common">Давайте оба!</a>
+							<div class=slide-control></div>
+						</div>
+						<div class="slide" id="slide2">
+							<div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+							<a class="slide-button btn-common">Давайте оба!</a>
+							<div class=slide-control></div>
+						</div>
+						<div class="slide" id="slide3">
+							<div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+							<a class="slide-button btn-common">Давайте оба!</a>
+							<div class=slide-control></div>
+						</div>
+					</div>	
 					<div class="main-left-banner upperbanner-common">
-						<h2>Малинка даром!</h2>
-						<p>При покупки 2-х кг любого вруктового мороженого, добавим в Ваш заказ банку малинового варенья бесплатно.</p>
+						<div class="banner-header">Малинка даром!</div>
+						<div class="banner-paragraph">При покупки 2-х кг любого вруктового мороженого, добавим в Ваш заказ банку малинового варенья бесплатно.</div>
 						<a class="banner-button btn-common" href="#wantjam">Хочу варенье!</a>
 					</div>
 					<div class="main-right-banner upperbanner-common">
-						<h2>Шоколадки даром!</h2>
-						<p>При покупке 2-х кг пломбира, добавим в Ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+						<div class="banner-header">Шоколадки даром!</div>
+						<div class="banner-paragraph">При покупке 2-х кг пломбира, добавим в Ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</div>
 						<a class="banner-button btn-common" href="#wantjam">Хочу шоколадки!</a>
 					</div>
 					<div class="main-hits">
 						<div class="hits-item hits-item1">
 							<img class="hits-picture" src="hit-item1" width="x" height="y" alt="hits-item1">
-							<img class="hit-label" src="hit-label" width="x" height="y">
 							<div class="hit-price">310р  /кг</div>
 							<a href="#hititem1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							<a class="hits-button btn-common" href="#quickhititem1">Быстрый просмотр</a>
 						</div>		
 						<div class="hits-item hits-item2">
 							<img class="hits-picture" src="hit-item2" width="x" height="y" alt="hits-item1">
-							<img class="hit-label" src="hit-label" width="x" height="y">
 							<div class="hit-price">380р  /кг</div>
 							<a href="#hititem2">Сливочно-кофейное с кусочками шоколада</a>
 							<a class="hits-button btn-common" href="#quickhititem2">Быстрый просмотр</a>
 						</div>	
 						<div class="hits-item hits-item3">
 							<img class="hits-picture" src="hit-item3" width="x" height="y" alt="hits-item1">
-							<img class="hit-label" src="hit-label" width="x" height="y">
 							<div class="hit-price">355р  /кг</div>
 							<a href="#hititem3">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							<a class="hits-button btn-common" href="#quickhititem3">Быстрый просмотр</a>
 						</div>
 						<div class="hits-item hits-item4">
 							<img class="hits-picture" src="hit-item4" width="x" height="y" alt="hits-item1">
-							<img class="hit-label" src="hit-label" width="x" height="y">
 							<div class="hit-price">415р  /кг</div>
 							<a href="#hititem4">Сливочное крем-брюле с карамельной подливкой</a>
 							<a class="hits-button btn-common" href="#quickhititem4">Быстрый просмотр</a>
 						</div>
 					</div>
-					<div class="main-seo">
-						<ul><h3 class="seo-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
-							<li>
-								<p class="seo-par seo-par-one">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>		
-							</li>								
-							<li>
-								<p class="seo-par seo-par-two">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья. </p>
-							</li>
-							<li>
-								<p class="seo-par seo-par-three">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-							</li>
-							<li>
-								<p class="seo-par seo-par-four">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
-							</li>
+					<div class="main-about">
+						<h1 class="about-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+						<ul>
+							<li class="about-par about-par-one">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
+							<li class="about-par about-par-two">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</li>
+							<li class="about-par about-par-three">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+							<li class="about-par about-par-four">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</li>
 						</ul>
 					</div>
 					<div class="main-news lowerbanner-common">

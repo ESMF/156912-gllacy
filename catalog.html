@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+		<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
@@ -37,15 +38,15 @@
 						<a href="#about">О компании</a>
 					</li>
 				</ul>
-				<ul class="header-userblock">
-					<li>
+				<div class="header-userblock">
+					<div class="userblock-searchblock">
 							<div class="userblock-searchform">
 								<form action="#echo" method="get" name="search-form">
 									<input type="search" name="search" id="search" placeholder="Что ищем">
 								</form>		
 							</div>
-					</li>
-					<li>Вход
+					</div>
+					<div class="userblock-loginblock"><a class="loginblock-href" href="#login">Вход</a>
 							<div class="userblock-loginform">
 								<form action="#echo" method="get" name="login-form">
 									<input type="email" name="email" id="email" placeholder="Электронная почта">
@@ -57,8 +58,8 @@
 									</div>
 								</form>	
 							</div>
-					</li>
-					<li>Пусто
+					</div>
+					<div class="userblock-cartblock"><a class="cartblock-href" href="#cart">Пусто</a>
 							<div class="userblock-cart">
 								<table class="cart-table">
 									<tr>
@@ -77,10 +78,10 @@
 									</tr>
 								</table>
 								<p class="cart-total">Итого:750 руб.</p>
-								<a class="cart-button btn-common" href="order-placement">Оформить заказ</a>
+								<a class="cart-button btn-common" href="#order-placement">Оформить заказ</a>
 							</div>
-					</li>
-				</ul>
+					</div>
+				</div>
 				<ul class="header-navigation">
 					<li><a href="#index">Главная</a></li>
 					<li><a href="#catalog">Каталог</a></li>
@@ -92,20 +93,20 @@
 				</div>
 			</header>
 			<main>
-				<header class="main-header"><h1>Сливочное мороженое</h1></header>
+				<h1 class="main-header">Сливочное мороженое</h1>
 				<section class="main-filter">
 					<form action="#echo" method="get">
 						<div class="filter-sorting">
 							<label for="sorting">Сортировка</label>
-								<div class="sorting-block">
-								<input type="text" list="sort" name="sorting" id="sorting" value="По популярности">
-									<datalist id="sort">
-										<option value="Сначала недорогие">
-										<option value="Сначала дорогие">
-										<option value="По жирности">
-									</datalist>		
-								</div>
-						</div>
+							<div class="sorting-block">
+								<select name="sorting" id="sorting">
+									<option value="popularity">По популярности</option>
+									<option value="inexpensive">Сначала недорогие</option>
+									<option value="expensive">Сначала дорогие</option>
+									<option value="fatness">По жирности</option>
+								</select>
+						  </div>
+						</div>	
 						<div class="filter-price">
 							Цена:<input type="number" value="100" name="price-min" readonly>руб. - <input type="number" value="500" name="price-max" readonly>руб.
 							<div class="price-range"></div>	
@@ -142,73 +143,73 @@
 					</form>
 				</section>
 				<section class="main-items">
-					<div class="item-block item1">
+					<div class="item-block">
 						<img class="item-picture" src="item1" width="x" height="y" alt="item1">
 						<div class="item-price">310р  /кг</div>
 						<a href="#item1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						<a class="item-button btn-common" href="#quickwatchitem1">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item2">
+					<div class="item-block">
 						<img class="item-picture" src="item2" width="x" height="y" alt="item2">
 						<div class="item-price">380р  /кг</div>
 						<a href="#item2">Сливочно-кофейное с кусочками шоколада</a>
 						<a class="item-button btn-common" href="#quickwatchitem2">Быстрый просмотр</a>
 					</div>	
-					<div class="item-block item3">
+					<div class="item-block">
 						<img class="item-picture" src="item3" width="x" height="y" alt="item3">
 						<div class="item-price">355р  /кг</div>
 						<a href="#item3">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						<a class="item-button btn-common" href="#quickwatchitem3">Быстрый просмотр</a>
 					</div>	
-					<div class="item-block item4">
+					<div class="item-block">
 						<img class="item-picture" src="item4" width="x" height="y" alt="item4">
 						<div class="item-price">415р  /кг</div>
 						<a href="#item4">Сливочное крем-брюле с карамельной подливкой</a>
 						<a class="item-button btn-common" href="#quickwatchitem4">Быстрый просмотр</a>
 					</div>	
-					<div class="item-block item5">
+					<div class="item-block">
 						<img class="item-picture" src="item5" width="x" height="y" alt="item5">
 						<div class="item-price">325р  /кг</div>
 						<a href="#item5">Сливочное с брусничным джемом</a>
 						<a class="item-button btn-common" href="#quickwatchitem5">Быстрый просмотр</a>
 					</div>	
-					<div class="item-block item6">
+					<div class="item-block">
 						<img class="item-picture" src="item6" width="x" height="y" alt="item6">
 						<div class="item-price">410р  /кг</div>
 						<a href="#item6">Сливочно-черничное с цельными ягодами черники</a>
 						<a class="item-button btn-common" href="#quickwatchitem6">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item7">
+					<div class="item-block">
 						<img class="item-picture" src="item7" width="x" height="y" alt="item7">
 						<div class="item-price">375р  /кг</div>
 						<a href="#item7">Сливочно-лимонное с карамельной присыпкой</a>
 						<a class="item-button btn-common" href="#quickwatchitem7">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item8">
+					<div class="item-block">
 						<img class="item-picture" src="item8" width="x" height="y" alt="item8">
 						<div class="item-price">320р  /кг</div>
 						<a href="#item8">Сливочное с шоколадной стружкой</a>
 						<a class="item-button btn-common" href="#quickwatchitem8">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item9">
+					<div class="item-block">
 						<img class="item-picture" src="item9" width="x" height="y" alt="item9">
 						<div class="item-price">440р  /кг</div>
 						<a href="#item9">Сливочно-ванильное с кусочками шоколада</a>
 						<a class="item-button btn-common" href="#quickwatchitem9">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item10">
+					<div class="item-block">
 						<img class="item-picture" src="item10" width="x" height="y" alt="item10">
 						<div class="item-price">435р  /кг</div>
 						<a href="#item10">Сливочноe с ментоловым сиропом</a>
 						<a class="item-button btn-common" href="#quickwatchitem10">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item11">
+					<div class="item-block">
 						<img class="item-picture" src="item11" width="x" height="y" alt="item11">
 						<div class="item-price">355р  /кг</div>
 						<a href="#item11">Сливочное с кусочками черного шоколада</a>
 						<a class="item-button btn-common" href="#quickhititem11">Быстрый просмотр</a>
 					</div>
-					<div class="item-block item12">
+					<div class="item-block">
 						<img class="item-picture" src="item12" width="x" height="y" alt="item12">
 						<div class="item-price">420р  /кг</div>
 						<a href="#item12">Сливочное с мятным сиропом</a>
@@ -270,3 +271,4 @@
 		</div>
 	</body>
 </html>
+
