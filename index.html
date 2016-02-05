@@ -8,14 +8,14 @@
   <body>
 		<div class="page-wrapper">
 			<div class="wrapper">
-				<header>
+				<header class="clearfix">
 					<div class="header-logo">
-							<img src="header-logo.jpg" width="x" height="y" alt="logo">
+							<img src="common_header_logo" width="150" height="55" alt="logo">
 					</div>
 					<ul class="header-menu">
 						<li>
 							<a href="#menu-catalog">Каталог</a>
-								<ul class="menu-catalog">
+								<ul class="menu-catalog hidden">
 									<li>
 										<a href="#ic-new">Новинки</a>
 									</li>
@@ -42,14 +42,14 @@
 					</ul>
 					<div class="header-userblock">
 						<div class="userblock-searchblock">
-							<div class="userblock-searchform">
+							<div class="userblock-searchform hidden">
 								<form action="#echo" method="get" name="search-form">
 									<input type="search" name="search" id="search" placeholder="Что ищем">
 								</form>		
 							</div>
 						</div>
 						<div class="userblock-loginblock"><a class="loginblock-href" href="#login">Вход</a>
-							<div class="userblock-loginform">
+							<div class="userblock-loginform hidden">
 								<form action="#echo" method="get" name="login-form">
 									<input type="email" name="email" id="email" placeholder="Электронная почта">
 									<input type="password" name="password" id="password" placeholder="Пароль">
@@ -62,7 +62,7 @@
 							</div>
 						</div>
 						<div class="userblock-cartblock"><a class="cartblock-href" href="#cart">Пусто</a>
-							<div class="userblock-cart">
+							<div class="userblock-cart hidden">
 								<table class="cart-table">
 									<tr>
 										<td><a class="cart-exiticon" href="#delete"></a></td>
@@ -83,61 +83,61 @@
 								<a class="cart-button btn-common" href="#order-placement">Оформить заказ</a>
 							</div>
 						</div>
-				  </div>
+					</div>
 					<div class="header-telephone">
 						<div class="hours">с 10 до 20, ежедневно</div>
 						<div class="number">8 812 450-45-45</div>
 					</div>
 				</header>
-				<main>
+				<main class="clearfix">
 					<div class="slider">
 						<div class="slide" id="slide1">
-							<div class="slide-title">Крем брюле и пломбир с малиновым джемом</div>
+							<div class="slide-title">Крем брюле и пломбир<br> с малиновым джемом</div>
 							<a class="slide-button btn-common">Давайте оба!</a>
 							<div class=slide-control></div>
 						</div>
-						<div class="slide" id="slide2">
-							<div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+						<div class="slide hidden" id="slide2">
+							<div class="slide-title">Шоколадный пломбир<br> и лимонный сорбет</div>
 							<a class="slide-button btn-common">Давайте оба!</a>
 							<div class=slide-control></div>
 						</div>
-						<div class="slide" id="slide3">
-							<div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+						<div class="slide hidden" id="slide3">
+							<div class="slide-title">Пломбир с помадкой<br> и клубничный щербет</div>
 							<a class="slide-button btn-common">Давайте оба!</a>
 							<div class=slide-control></div>
 						</div>
 					</div>	
-					<div class="main-left-banner upperbanner-common">
+					<div class="main-left-banner upperbanner-common clearfix">
 						<div class="banner-header">Малинка даром!</div>
 						<div class="banner-paragraph">При покупки 2-х кг любого вруктового мороженого, добавим в Ваш заказ банку малинового варенья бесплатно.</div>
 						<a class="banner-button btn-common" href="#wantjam">Хочу варенье!</a>
 					</div>
-					<div class="main-right-banner upperbanner-common">
+					<div class="main-right-banner upperbanner-common clearfix">
 						<div class="banner-header">Шоколадки даром!</div>
 						<div class="banner-paragraph">При покупке 2-х кг пломбира, добавим в Ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</div>
 						<a class="banner-button btn-common" href="#wantjam">Хочу шоколадки!</a>
 					</div>
 					<div class="main-hits">
-						<div class="hits-item hits-item1">
-							<img class="hits-picture" src="hit-item1" width="x" height="y" alt="hits-item1">
+						<div class="hits-item">
+							<img class="hits-picture" src="img/index_hit_image_1.png" width="100%" height="100%" alt="hits-item1">
 							<div class="hit-price">310р  /кг</div>
 							<a href="#hititem1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 							<a class="hits-button btn-common" href="#quickhititem1">Быстрый просмотр</a>
 						</div>		
-						<div class="hits-item hits-item2">
-							<img class="hits-picture" src="hit-item2" width="x" height="y" alt="hits-item1">
+						<div class="hits-item">
+							<img class="hits-picture" src="img/index_hit_image_2.png" width="100%" height="100%" alt="hits-item1">
 							<div class="hit-price">380р  /кг</div>
 							<a href="#hititem2">Сливочно-кофейное с кусочками шоколада</a>
 							<a class="hits-button btn-common" href="#quickhititem2">Быстрый просмотр</a>
 						</div>	
-						<div class="hits-item hits-item3">
-							<img class="hits-picture" src="hit-item3" width="x" height="y" alt="hits-item1">
+						<div class="hits-item">
+							<img class="hits-picture" src="img/index_hit_image_3.png" width="100%" height="100%" alt="hits-item1">
 							<div class="hit-price">355р  /кг</div>
 							<a href="#hititem3">Сливочно-клубничное с присыпкой из белого шоколада</a>
 							<a class="hits-button btn-common" href="#quickhititem3">Быстрый просмотр</a>
 						</div>
-						<div class="hits-item hits-item4">
-							<img class="hits-picture" src="hit-item4" width="x" height="y" alt="hits-item1">
+						<div class="hits-item">
+							<img class="hits-picture" src="img/index_hit_image_4.png" width="100%" height="100%" alt="hits-item1">
 							<div class="hit-price">415р  /кг</div>
 							<a href="#hititem4">Сливочное крем-брюле с карамельной подливкой</a>
 							<a class="hits-button btn-common" href="#quickhititem4">Быстрый просмотр</a>
@@ -154,7 +154,7 @@
 					</div>
 					<div class="main-news lowerbanner-common">
 						<p>Новое в нашем блоге</p>
-						<h3><a href="#sherbetserving">10 способов сервировки фруктовых щербетов к столу</a></h3>
+						<h3><a href="#sherbetserving">10 способов сервировки<br> фруктовых щербетов<br> к столу</a></h3>
 					</div>
 					<div class="main-distrib lowerbanner-common">
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
@@ -165,7 +165,7 @@
 					</div>
 				</main>
 			</div>
-			<div class="main-map">
+			<div class="main-map clearfix">
 				<div class="map-infoblock">
 					<p>Адрес главного офиса и офлайн магазина:</p>	
 					<p>ул. Большая Конюшенная 19/8, Санкт-Петербург<p>
@@ -176,12 +176,12 @@
 				</div>
 			</div>
 			<div class="wrapper">
-			<footer>
+			<footer class="clearfix">
 				<div class="footer-social">
-					<a class="social-btn social-btn-tw" href="#tw"></a>
-					<a class="social-btn social-btn-inst" href="#inst"></a>
-					<a class="social-btn social-btn-fb" href="#fb"></a>
-					<a class="social-btn social-btn-vk" href="#vk"></a>
+					<a class="social-btn social-btn-tw" href="#tw">Твиттер</a>
+					<a class="social-btn social-btn-inst" href="#inst">Инстаграм</a>
+					<a class="social-btn social-btn-fb" href="#fb">Фэйсбук</a>
+					<a class="social-btn social-btn-vk" href="#vk">Вконтакте</a>
 				</div>	
 				<ul class="footer-info">
 					<li>
@@ -206,7 +206,7 @@
 			</footer>
 			</div>
 		</div>
-		<div class="window-modal">
+		<div class="window-modal hidden">
 			<div class="modal-feedbackform">
 				<h2>Мы вам обязательно ответим!</h2>
 				<button class="modal-exiticon"></button>
