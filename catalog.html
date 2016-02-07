@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
 		<link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
 		<div class="page-wrapper">
 			<div class="wrapper">
-				<header class="clearfix">
+				<div class="header-top clearfix">
 					<div class="header-logo">
 							<img src="common_header_logo" width="150" height="55" alt="logo">
 					</div>
@@ -84,6 +85,8 @@
 							</div>
 						</div>
 					</div>
+				</div>
+				<div class="header-bottom clearfix">
 					<ul class="header-navigation">
 						<li><a href="#index">Главная</a></li>
 						<li><a href="#catalog">Каталог</a></li>
@@ -93,10 +96,10 @@
 						<div class="hours">с 10 до 20, ежедневно</div>
 						<div class="number">8 812 450-45-45</div>
 					</div>
-				</header>
+				</div>
 				<main class="clearfix">
 					<h1 class="main-header">Сливочное мороженое</h1>
-						<section class="main-filter clearfix">
+						<section class="main-upperfilter clearfix">
 							<form action="#echo" method="get">
 							<div class="filter-sorting">
 								<label for="sorting">Сортировка</label>
@@ -126,6 +129,8 @@
 									<label for="fatness_fifty">выше 50%</label>
 								</div>	
 							</div>
+						</section>
+						<section class="main-lowerfilter clearfix">
 							<div class="filter-fillness">
 								Наполнители:
 								<div class="fillness-block">
@@ -242,31 +247,33 @@
 					</ul>			
 				</main>
 				<footer class="clearfix">
+				<div class="footer-copyright">
+					<a href="#htmlacademy">
+						<img src="htmlacademy.jpg" alt="htmlacademy" title="htmlacademy" width="x" height="y">
+					</a>
+					<p>Сделано в <a href="#htmlacademy">htmlacademy</a> 2016</p>
+				</div>
 				<div class="footer-social">
 					<a class="social-btn social-btn-tw" href="#tw">Твиттер</a>
 					<a class="social-btn social-btn-inst" href="#inst">Инстаграм</a>
 					<a class="social-btn social-btn-fb" href="#fb">Фэйсбук</a>
 					<a class="social-btn social-btn-vk" href="#vk">Вконтакте</a>
 				</div>	
-				<ul class="footer-info">
-					<li>
-						<a href="#provider"><b>Для поставщиков</b></a>
-					</li>								
-					<li>
-						<a href="#aboutproducing">О производстве</a>
-					</li>
-					<li>
-						<a href="#documents">Наши документы</a>
-					</li>		
-					<li>
-						<a href="#eco">Экологические стандарты</a>
-					</li>
-				</ul>
-				<div class="footer-copyright">
-					<a href="#htmlacademy">
-						<img src="htmlacademy.jpg" alt="htmlacademy" title="htmlacademy" width="x" height="y">
-					</a>
-					<p>Сделано в <a href="#htmlacademy">htmlacademy</a> 2016</p>
+				<div class="footer-info">
+					<ul class="info-links">
+						<li>
+							<a href="#provider"><b>Для поставщиков</b></a>
+						</li>								
+						<li>
+							<a href="#aboutproducing">О производстве</a>
+						</li>
+						<li>
+							<a href="#documents">Наши документы</a>
+						</li>		
+						<li>
+							<a href="#eco">Экологические стандарты</a>
+						</li>
+					</ul>
 				</div>
 			</footer>
 			</div>

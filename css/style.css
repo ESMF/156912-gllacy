@@ -27,19 +27,11 @@ h2 {
   clear: both;
 }
 
-.page-wrapper {
+.wrapper {
 	min-width:900px;
 	max-width:1200px;
+	padding: 0 2.3%;
 	margin:auto;
-}
-
-.wrapper {
-	width:95%;
-	margin:auto;
-}
-
-header {
-	min-height:120px;
 }
 
 .header-logo {
@@ -172,6 +164,24 @@ header {
 .main-about {
 	padding:30px 21px;
 	margin-bottom:40px;
+	font-size: 0px;
+	max-height: 373px;
+	min-height: 309px;
+}
+
+.main-about ul {
+	padding:0px;
+	margin:0px;
+}
+
+.main-about li {
+	display: inline-block;
+	vertical-align:top;
+	font-size: 1rem;
+	width: 47%;
+	padding-left: 56px;
+	padding-bottom: 14px;
+	box-sizing:border-box;
 }
 
 .lowerbanner-common {
@@ -190,6 +200,9 @@ header {
 }
 
 .main-map {
+	margin:0 auto;
+	max-width:1194px;
+	min-width:900px;
 	height:430px;
 	padding-right:5%;
 	padding-top:65px;
@@ -204,34 +217,63 @@ header {
 
 footer {
 	min-height:103px;
-	padding-top:37px;
+	padding-top:20px;
+}
+
+.footer-copyright {
+	float: right;
+	width: 200px;
+	font-size: 12px;
 }
 
 .footer-social {
 	float:left;
-	width:186px;
+	width:200px;
+	padding-top:20px;
 }
-
 
 .footer-info {
-	float:left;
-	width:327px;
-	margin-left:18.75%;
+    margin: 0;
+    margin-left: 220px;
+    margin-right: 220px;
+		padding-top:20px;
 }
 
-.footer-info a{
+.info-links {
+	width:400px;
+	margin:auto;
+	font-size:0px;
+	text-align:left;
+	
+}
+
+.info-links li {
+	padding-left:30px;
+	width:134px;
+	font-size:1rem;
+	display:inline-block;
+	vertical-align: center;
+	text-align:left;
+}
+
+.info-links li:last-child {
+	width:auto;
+}
+
+.footer-info a {
 	font-size:13px;
 }
 
-.footer-copyright {
-	float:right;
-}
+/*...................catalog.html..........................*/
 
-/*catalog.html*/
+.header-top {
+	margin-bottom:20px;
+} 
 
 .header-navigation {
 	float:left;
 	width:50%;
+	height:44px;
 	font-size:0px;
 	padding:0px;
 	margin:0px;
@@ -240,12 +282,18 @@ footer {
 .header-navigation li {
 	display:inline-block;
 	font-size:1rem;
+	line-height:65px;
+	vertical-align:bottom;
 }
 
-.main-filter {
+.main-header {
+	margin-top:10px;
+	margin-bottom:36px;
+}
+
+.main-lowerfilter {
 	margin-bottom:40px;
 }
-
 
 .filter-sorting {
 	float:left;
@@ -315,6 +363,7 @@ footer {
 .paginator {
 	float:right;
 	font-size:0px;
+	margin-bottom:60px;
 }
 
 .paginator li {
@@ -322,3 +371,8 @@ footer {
 	vertical-align:middle;
 	font-size:1rem;
 }
+
+
+
+
+
