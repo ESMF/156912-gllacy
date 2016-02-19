@@ -7,16 +7,19 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+		<input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
 		<div class="page-wrapper">
 			<div class="wrapper">
 				<div class="header-top clearfix">
 					<div class="header-logo">
-							<img src="common_header_logo" width="150" height="55" alt="logo">
+							<img src="img/common_header_logo.svg" width="156" height="66" alt="logo">
 					</div>
 					<ul class="header-menu">
 						<li>
 							<a href="#menu-catalog">Каталог</a>
-								<ul class="menu-catalog hidden">
+								<ul class="menu-catalog">
 									<li>
 										<a href="#ic-new">Новинки</a>
 									</li>
@@ -43,14 +46,14 @@
 					</ul>
 					<div class="header-userblock">
 						<div class="userblock-searchblock">
-							<div class="userblock-searchform hidden">
+							<div class="userblock-searchform">
 								<form action="#echo" method="get" name="search-form">
-									<input type="search" name="search" id="search" placeholder="Что ищем">
+									<input type="search" name="search" id="search" placeholder="Что ищем?">
 								</form>		
 							</div>
 						</div>
 						<div class="userblock-loginblock"><a class="loginblock-href" href="#login">Вход</a>
-							<div class="userblock-loginform hidden">
+							<div class="userblock-loginform clearfix">
 								<form action="#echo" method="get" name="login-form">
 									<input type="email" name="email" id="email" placeholder="Электронная почта">
 									<input type="password" name="password" id="password" placeholder="Пароль">
@@ -62,9 +65,9 @@
 								</form>	
 							</div>
 						</div>
-						<div class="userblock-cartblock"><a class="cartblock-href" href="#cart">Пусто</a>
-							<div class="userblock-cart hidden">
-								<table class="cart-table">
+						<div class="userblock-cartblock"><a class="cartblock-href" href="#cart">2 товара</a>
+							<div class="userblock-cart">
+								<table class="cart-table clearfix">
 									<tr>
 										<td><a class="cart-exiticon" href="#delete"></a></td>
 										<td></td>
@@ -96,17 +99,19 @@
 					<div class="slide" id="slide1">
 						<div class="slide-title">Крем брюле и пломбир<br> с малиновым джемом</div>
 						<a class="slide-button btn-common">Давайте оба!</a>
-						<div class=slide-control></div>
 					</div>
-					<div class="slide hidden" id="slide2">
+					<div class="slide" id="slide2">
 						<div class="slide-title">Шоколадный пломбир<br> и лимонный сорбет</div>
-						<a class="slide-button btn-common">Давайте оба!</a>
-						<div class=slide-control></div>
+						<a class="slide-button btn-common" href="#both">Давайте оба!</a>
 					</div>
-					<div class="slide hidden" id="slide3">
+					<div class="slide" id="slide3">
 						<div class="slide-title">Пломбир с помадкой<br> и клубничный щербет</div>
 						<a class="slide-button btn-common">Давайте оба!</a>
-						<div class=slide-control></div>
+					</div>
+					<div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
 					</div>
 				</div>
 				<div class="main-upperbanners clearfix">
@@ -124,31 +129,31 @@
 				<div class="main-hits">
 					<div class="hits-item">
 						<img class="hits-picture" src="img/index_hit_image_1.png" width="100%" height="100%" alt="hits-item1">
-						<div class="hit-price">310р  /кг</div>
+						<div class="hit-price"><p>310</p><span>/кг</span></div>
 						<a href="#hititem1">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
 						<a class="hits-button btn-common" href="#quickhititem1">Быстрый просмотр</a>
 					</div>		
 					<div class="hits-item">
 						<img class="hits-picture" src="img/index_hit_image_2.png" width="100%" height="100%" alt="hits-item1">
-						<div class="hit-price">380р  /кг</div>
+						<div class="hit-price"><p>380</p><span>/кг</span></div>
 						<a href="#hititem2">Сливочно-кофейное с кусочками шоколада</a>
 						<a class="hits-button btn-common" href="#quickhititem2">Быстрый просмотр</a>
 					</div>	
 					<div class="hits-item">
 						<img class="hits-picture" src="img/index_hit_image_3.png" width="100%" height="100%" alt="hits-item1">
-						<div class="hit-price">355р  /кг</div>
+						<div class="hit-price"><p>355</p><span>/кг</span></div>
 						<a href="#hititem3">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						<a class="hits-button btn-common" href="#quickhititem3">Быстрый просмотр</a>
 					</div>
 					<div class="hits-item">
 						<img class="hits-picture" src="img/index_hit_image_4.png" width="100%" height="100%" alt="hits-item1">
-						<div class="hit-price">415р  /кг</div>
+						<div class="hit-price"><p>415</p><span>/кг</span></div>
 						<a href="#hititem4">Сливочное крем-брюле с карамельной подливкой</a>
 						<a class="hits-button btn-common" href="#quickhititem4">Быстрый просмотр</a>
 					</div>
 				</div>
 				<div class="main-about">
-					<h1 class="about-header">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+					<h1>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
 					<ul>
 						<li class="about-par about-par-one">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
 						<li class="about-par about-par-two">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
@@ -159,69 +164,80 @@
 				<div class="main-lowerbanners clearfix">
 					<div class="main-news lowerbanner-common">
 						<p>Новое в нашем блоге</p>
-						<h3><a href="#sherbetserving">10 способов сервировки<br> фруктовых щербетов<br> к столу</a></h3>
+						<p><a href="#sherbetserving">10 способов сервировки <br> фруктовых щербетов <br> к столу </a></p>
 					</div>
-					<div class="main-distrib lowerbanner-common">
-						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-						<form action="#echo" method="get" name="email-form">
-							<input type="email" name="email" placeholder="Электронная почта">
-							<button type="submit" class="disturb-button btn-common">Отправить</button>
-						</form>	
+					<div class="main-distrib lowerbanner-common clearfix">
+						<div class="distrib-inner">
+							<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+							<div class="distrib-formpart clearfix">
+								<form action="#echo" method="get" name="email-form">
+									<div class="input-field clearfix">
+									<input type="email" name="email" placeholder="Электронная почта">
+									</div>
+									<button type="submit" class="disturb-button btn-common">Отправить</button>
+								</form>
+							</div>		
+						</div>
 					</div>
-				</div>
-			</div>
+				</div>	
+			</div>	
 			<div class="main-map clearfix">
 				<div class="map-infoblock">
-					<p>Адрес главного офиса и офлайн магазина:</p>	
+					<p class="lowercase">Адрес главного офиса и офлайн магазина:</p>	
 					<p>ул. Большая Конюшенная 19/8, Санкт-Петербург<p>
-					<p>Для заказов по телефону:</p>
+					<p class="lowercase">Для заказов по телефону:</p>
 					<p>8 812 450-25-25</p>
-					<p>(с 10 до 20 ежедневно)</p>
+					<p class="lowercase">(с 10 до 20 ежедневно)</p>
 					<a class="map-feedbackform btn-common" href="#feedbackform">Форма обратной связи</a>
 				</div>
 			</div>
 			<div class="wrapper">
-			<footer class="clearfix">
-				<div class="footer-copyright">
-					<a href="#htmlacademy">
-						<img src="htmlacademy.jpg" alt="htmlacademy" title="htmlacademy" width="x" height="y">
-					</a>
-					<p>Сделано в <a href="#htmlacademy">htmlacademy</a> 2016</p>
-				</div>
-				<div class="footer-social">
-					<a class="social-btn social-btn-tw" href="#tw">Твиттер</a>
-					<a class="social-btn social-btn-inst" href="#inst">Инстаграм</a>
-					<a class="social-btn social-btn-fb" href="#fb">Фэйсбук</a>
-					<a class="social-btn social-btn-vk" href="#vk">Вконтакте</a>
-				</div>	
-				<div class="footer-info">
-					<ul class="info-links">
-						<li>
-							<a href="#provider"><b>Для поставщиков</b></a>
-						</li>								
-						<li>
-							<a href="#aboutproducing">О производстве</a>
-						</li>
-						<li>
-							<a href="#documents">Наши документы</a>
-						</li>		
-						<li>
-							<a href="#eco">Экологические стандарты</a>
-						</li>
-					</ul>
-				</div>
-			</footer>
+				<footer class="clearfix">
+					<div class="footer-copyright">
+						<a href="#htmlacademy">
+							<img src="img/index_footer_copyright_logo.svg" alt="htmlacademy" title="htmlacademy" width="109" height="38">
+						</a>
+						<p>Сделано в <a href="#htmlacademy">htmlacademy</a>©2016</p>
+					</div>
+					<div class="footer-social">
+						<a class="social-btn social-btn-tw" href="#tw">Твиттер</a>
+						<a class="social-btn social-btn-inst" href="#inst">Инстаграм</a>
+						<a class="social-btn social-btn-fb" href="#fb">Фэйсбук</a>
+						<a class="social-btn social-btn-vk" href="#vk">Вконтакте</a>
+					</div>	
+					<div class="footer-info">
+						<ul class="info-links">
+							<li>
+								<a href="#provider"><b>Для поставщиков</b></a>
+							</li>								
+							<li>
+								<a href="#aboutproducing">О производстве</a>
+							</li>
+							<li>
+								<a href="#documents">Наши документы</a>
+							</li>		
+							<li>
+								<a href="#eco">Экологические стандарты</a>
+							</li>
+						</ul>
+					</div>
+				</footer>
 			</div>
 		</div>
 		<div class="window-modal hidden">
 			<div class="modal-feedbackform">
-				<h2>Мы вам обязательно ответим!</h2>
-				<button class="modal-exiticon"></button>
+				<h2>Мы обязательно вам ответим!</h2>
+				<button type="button" class="modal-exit"></button>
 				<form action="#echo" method="get" name="modal-feedbackform">
-					<input type="text" name="name" placeholder="Как вас зовут?">
-					<input type="email" name="email" placeholder="Ваша почта для ответа?">
-					<textarea name="comment" rows="x" cols="y">
-						Напишите что-нибудь...
+					<div class="modal-inputblock">
+						<input type="text" name="name" id="modal_name" placeholder="Как вас зовут?" required>
+						<label for="modal_name">Как вас зовут?</label>
+					</div>	
+					<div class="modal-inputblock">
+						<input type="text" name="email" id="modal_email" placeholder="Ваша почта для ответа?" required>
+						<label for="modal_email">Ваша почта для ответа?</label>	
+					</div>
+					<textarea name="comment" rows="8" cols="50">Напишите что-нибудь...
 					</textarea>
 					<button type="submit" class="modal-button btn-common">Отправить</button>
 				</form>
@@ -230,4 +246,24 @@
 	</body>
 </html>
 
+<!--
+<div class="float-label">
+	<input type="text" id="i1" required>
+	<label for="i1">Лейбл</label>
+</div>
+
+.float-label{
+	position: relative:
+}
+
+.float-label input + label {
+	position: absolute;
+	поверх поля ввода
+	большой и чёрный
+}
 	
+.float-label input:focus + label,
+.float-label input:valid + label{
+  позиция над полем
+	маленький и синий
+}-->
