@@ -1326,7 +1326,7 @@ footer a {
 	border-radius:50px;
 	color:#ffffff;
 	border:none;
-	padding:8px 33px 8px 15px;
+	padding:7px 30px 7px 10px;
 	font-family:inherit;
 	font-size:16px;
 	line-height:20px;
@@ -1866,17 +1866,11 @@ input[type="checkbox"]:checked + label:disabled::after {
 	transform:rotate(-45deg);
 }
 
-.modal-feedbackform input {
-	display:block;
-	padding:15px;
-	margin-bottom:22px;
-	width:236px;
-	border:1px solid #d3d3d2;
-	border-radius:5px;
-	box-sizing:border-box;
+.modal-textareablock {
+	position:relative;
 }
 
-.modal-feedbackform textarea {
+.modal-textareablock textarea {
 	padding:15px;
 	border-radius:5px;
 	color:#9b9b9b;
@@ -1885,48 +1879,55 @@ input[type="checkbox"]:checked + label:disabled::after {
 	font-size:16px;
 	font-weight:normal;
 	margin-bottom:22px;
-	resize: none;
+	resize:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
-.modal-feedbackform textarea:hover {
+.modal-textareablock textarea:hover {
 	border:2px solid #9a9a9a;
 	padding:14px;
 }
 
-
-.modal-feedbackform textarea:focus {
+.modal-textareablock textarea:focus {
 	border:2px solid #8fbdec;
 	padding:14px;
 }
 
-.modal-feedbackform textarea:valid {
+.modal-textareablock textarea:valid {
 	border:1px solid #9a9a9a;
 	font-weight:bold;
 	color:#000000;
 	padding:15px;
 }
 
-.modal-feedbackform textarea + label {
+.modal-textareablock textarea + label {
 	position:absolute;
 	font-size:16px;
 	line-height:20px;
 	color:#9a9a9a;
-	bottom:250px;
-	left:35px;
+	top:15px;
+	left:10px;
 }
 
-.modal-feedbackform textarea:focus + label {
+.modal-textareablock textarea:focus + label {
 	font-size:14px;
 	line-height:20px;
 	color:#8fbdec;
-	bottom:280px;
+	top:-17px;
+	left:10px;
 }
 
-.modal-feedbackform textarea:valid + label {
+.modal-textareablock textarea:valid + label {
 	font-size:14px;
 	line-height:20px;
 	color:#9a9a9a;
-	bottom:280px;
+	top:-17px;
+	left:10px;
 }
 
 .modal-button {
@@ -1945,7 +1946,15 @@ input[type="checkbox"]:checked + label:disabled::after {
 .modal-inputblock input  {
 	font-size:16px;
 	line-height:20px;
-	border:1px solid #9a9a9a;
+	display:block;
+	padding:15px;
+	margin-bottom:22px;
+	width:236px;
+	border:1px solid #d3d3d2;
+	border-radius:5px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
 }
 
 .modal-inputblock input + label {
