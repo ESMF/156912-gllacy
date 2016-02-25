@@ -203,6 +203,13 @@ a {
 	display:block;
 }
 
+li .menu-catalog li .active{
+	background-color:#d07058;
+	color:#ffffff;
+	cursor:default;
+}
+
+
 .menu-catalog li:first-child a {
 	position:relative;
 	font-weight:bold;
@@ -236,29 +243,30 @@ a {
 	font-weight:normal;
 }
 
-.menu-catalog li a:hover{
-	background-color:#fbded7;
-}
-
-.menu-catalog li a:active{
-	background-color:#f6b5a5;
-	box-shadow:none;
-}
-
-.menu-catalog li .active {
-	background-color:#d07058;
-	color:#ffffff;
-	cursor:default;
-}
-
 .menu-catalog li .active:hover {
 	background-color:#d07058;
 	color:#ffffff;
 	cursor:default;
 }
 
+
+.menu-catalog li a:hover {
+	background-color:#fbded7;
+}
+
+.menu-catalog li a:active {
+	background-color:#f6b5a5;
+	box-shadow:none;
+}
+
 .menu-catalog li .active::before {
 	background:none;
+}
+
+.menu-catalog li .active {
+	background-color:#d07058;
+	color:#ffffff;
+	cursor:default;
 }
 
 .header-userblock {

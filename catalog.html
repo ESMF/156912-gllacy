@@ -16,7 +16,7 @@
 				<ul class="header-menu">
 					<li>
 						<a class="current" href="#menu-catalog">Каталог</a>
-							<ul class="menu-catalog hidden">
+							<ul class="menu-catalog">
 								<li>
 									<a href="#ic-new">Новинки</a>
 								</li>
@@ -43,25 +43,32 @@
 				</ul>
 				<div class="header-userblock">
 					<div class="userblock-searchblock">
-						<div class="userblock-searchform hidden">
-							<form action="#echo" method="get" name="search-form">
-								<input type="search" name="search" id="search" placeholder="Что ищем">
-							</form>		
+							<div class="userblock-searchform">
+								<form action="#echo" method="get" name="search-form">	
+									<input type="search" name="search" id="search" required>
+									<label for="search">Что ищем?</label>
+								</form>		
+							</div>
 						</div>
-					</div>
 					<div class="userblock-loginblock"><a class="loginblock-href" href="#login">Вход</a>
-						<div class="userblock-loginform hidden">
-							<form action="#echo" method="get" name="login-form">
-								<input type="email" name="email" id="email" placeholder="Электронная почта">
-								<input type="password" name="password" id="password" placeholder="Пароль">
-								<button type="submit" class="loginform-btn btn-common">Войти</button>
-								<div class="loginform-links">
-									<a href="#forgot">Забыли пароль?</a>
-									<a href="#register">Новая регистрация</a>
-								</div>
-							</form>	
+							<div class="userblock-loginform clearfix">
+								<form action="#echo" method="get" name="login-form">
+									<div class="loginform-inputblock">
+										<input type="text" name="email" id="email" required>
+										<label for="email">Электронная почта</label>
+									</div>	
+									<div class="loginform-inputblock">
+										<input type="password" name="password" id="password" required>
+										<label for="password">Пароль</label>
+									</div>		
+									<button type="submit" class="loginform-btn btn-common">Войти</button>
+									<div class="loginform-links">
+										<a href="#forgot">Забыли пароль?</a>
+										<a href="#register">Новая регистрация</a>
+									</div>
+								</form>	
+							</div>
 						</div>
-					</div>
 					<div class="userblock-cartblock"><a class="cartblock-href" href="#cart">2 товара</a>
 						<div class="userblock-cart hidden">
 							<table class="cart-table">
